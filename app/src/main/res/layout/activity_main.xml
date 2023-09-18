@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="MASUKKAN DUA ANGKA"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:hint="masukkan angka pertama"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:inputType="number"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/secNum"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNum"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="masukkan angka kedua"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="RtlHardcoded" />
+
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="27dp"
+        android:text="H A S I L"
+        android:textAlignment="center"
+        android:textStyle="bold|normal" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secNum"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="18dp"
+        android:text="+"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/plus"
+        android:layout_below="@id/secNum"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/plus"
+        android:layout_alignBottom="@id/plus"
+        android:layout_alignBaseline="@id/plus"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plus"
+        android:layout_centerHorizontal="true"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/clear"
+        android:layout_marginRight="2dp"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/bagi"
+        android:layout_alignBottom="@id/bagi"
+        android:layout_marginRight="2dp"
+        android:layout_toStartOf="@id/bagi"
+        android:layout_toLeftOf="@id/bagi"
+        android:text="X" />
+</RelativeLayout>
